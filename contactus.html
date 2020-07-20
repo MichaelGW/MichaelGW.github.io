@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet'>
+<title>Run Clean</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="cartoon_CPU.png">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 10%;
+  color: white;
+  text-align: left;
+  background-image: url('parallax.jpeg');
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 200%;
+  font-family: 'Armata';
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #0077ff;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  color: black;
+  padding: 1% 20%;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 400px wide */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header";>
+  <h1><img src='cartoon_CPU.png' width=5%/> Run Clean</h1>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="contactus.html" class="active">Contact Us</a>
+  <a href="aboutUs.html" class="right">About Us</a>
+</div>
+
+<div class="main">
+  <h1>What We Do</h2>
+  <br>
+  <h2>Workplace Computer cleaning and preventive maintenance</h2>
+  <p>In the modern workplace PCs are a significant investment for 
+    any enterprise and proper maintenance of existing resources
+     can extend the life of theses resources resulting in significant 
+     savings in the long run.</p>
+  <br>
+  <h2>Thorough dust removal of all computers</h2>
+  <img src='Dusty-Computer.jpg' width=50%/>
+  <p>Dust buildup can cause problems for every system. By blocking
+     the intake/exhaust vents, slowing down the fans and clogging 
+     up the heatsinks, dust buildup is the quickest way to damage 
+     your system over time.  Removing dust from the PCs in a work 
+     environment has the added benefit of taking dust out of the 
+     circulation of the work environment. </p>
+  <br>
+  <h2>Thermal paste replacement</h2>
+  <p>even well applied thermal paste can dry out . For computers 
+    over three years old replacing the thermal paste can improve
+     cooling of the processor and therefore improve the entire 
+     computers performance. Lower average processor temperatures 
+     also extends the life of the processor allowing the computer
+      to stay in use longer.</p>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
 

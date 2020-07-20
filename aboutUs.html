@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet'>
 <title>Run Clean</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,13 +17,16 @@ body {
 }
 
 .header {
-  padding: 1%;
-  color: black;
+  padding: 10%;
+  color: white;
   text-align: left;
-  background-image: url('Banner.png');
+  background-image: url('parallax.jpeg');
+  height: 100%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 200%;
-  font-family: monospace;
+  font-family: 'Armata';
 }
 
 .navbar {
@@ -60,7 +64,6 @@ body {
   float: right
 }
 
-/* Main column */
 .main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
@@ -69,26 +72,20 @@ body {
   padding: 1% 20%;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Footer */
 .footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
 }
 
+/* Responsive layout - when the screen is less than 400px wide */
 @media screen and (max-width: 400px) {
   .navbar a {
     float: none;
     width: 100%;
   }
 }
+
 </style>
 </head>
 <body>
@@ -99,7 +96,7 @@ body {
 
 <div class="navbar">
   <a href="index.html">Home</a>
-  <a href="#">Contact Us</a>
+  <a href="contactus.html">Contact Us</a>
   <a href="aboutUs.html" class="active">About Us</a>
 </div>
 
