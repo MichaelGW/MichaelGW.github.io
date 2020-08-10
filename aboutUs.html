@@ -14,6 +14,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="cartoon_CPU.png">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+  defer
+></script>
+<style type="text/css">
+  /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+
+</style>
 <style>
 * {
   box-sizing: border-box;
@@ -220,6 +233,21 @@ body {
 }
 
 </style>
+<script>
+  "use strict";
+
+  let map;
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: {
+        lat: -34.397,
+        lng: 150.644
+      },
+      zoom: 8
+    });
+  }
+</script>
 </head>
 <body>
 
@@ -237,9 +265,10 @@ body {
   <h1>We are based out of Kingston Ontario</h2>
   <p></p>
     <img src="kingston.PNG" alt="Snow" style="width:100%">
+
   <p>Founded by and run Queens University Students</p>
 </div>
-
+<div id="map"></div>
 <div class="footer">
   <p>Run Clean 2020</p>
 </div>
