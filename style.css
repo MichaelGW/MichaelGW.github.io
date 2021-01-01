@@ -62,8 +62,8 @@
     padding: 1% 20%;
   }
 
-  li:not(:last-child) {
-    margin-bottom: 10px;
+  li{
+    margin: 10px 0;
   }
   
   .footer {
